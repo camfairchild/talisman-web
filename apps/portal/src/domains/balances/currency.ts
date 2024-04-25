@@ -12,6 +12,10 @@ export const currencyConfig: Partial<Record<TokenRateCurrency, { unicodeCharacte
     unicodeCharacter: '$',
     name: 'Australian Dollar',
   },
+  cad: {
+    unicodeCharacter: '$',
+    name: 'Canadian Dollar',
+  },
   eur: {
     unicodeCharacter: '€',
     name: 'Euro',
@@ -55,6 +59,7 @@ export const selectedCurrencyState = atom<TokenRateCurrency>({
         stringLiterals({
           usd: 'usd',
           aud: 'aud',
+          cad: 'cad',
           nzd: 'nzd',
           cud: 'cud',
           hkd: 'hkd',
